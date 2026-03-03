@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(146, 160, 159);
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    color:black;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: rgb(110, 116, 115);
+    transition: all 0.4s ease;
+    color: beige;
+}
+
+nav ul li a.active {
+    background-color: rgb(173, 20, 51);
+    color: white;
+}
