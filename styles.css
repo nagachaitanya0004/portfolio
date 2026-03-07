@@ -1,9 +1,47 @@
+/* General Styles */
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #F2F2F2;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #1a1a1a;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+
+/* Navigation */
 nav ul {
     list-style-type:none;
     margin: 0;
@@ -33,4 +71,244 @@ nav ul li a:hover:not(.active) {
 nav ul li a.active {
     background-color: rgb(173, 20, 51);
     color: white;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #E0E0E0;
+    padding: 4rem 2rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+
+/* Introduction Section */
+.introduction {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Coding Platform Stats */
+.coding-platform-stats {
+    background-color: #E0E0E0;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.stats-flex-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.stats-flex-box li {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 220px;
+    height: auto;
+    gap: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-flex-box li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-flex-box li img {
+    display: block;
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+}
+
+.stats-flex-box li .problem-count {
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.stats-flex-box li .platform-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 4rem 2rem;
+    background-color: #E0E0E0;
+    text-align: center;
+}
+
+.skills-section h3 {
+    margin: 0 0 0.3rem 0;
+}
+
+.skills-flex-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.skills-flex-box li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-flex-box li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.05);
+    width: 95px;
+    height: 95px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.12;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skills-flex-box li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.skills-flex-box li:hover::before {
+    opacity: 0.35;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.skills-flex-box li .skill-name {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.skills-flex-box li:hover .skill-name {
+    transform: scale(1.04);
+}
+
+/* Individual Skill Icons */
+.skills-flex-box .c::before {
+    background-image: url('images/skills-icons/c-program-icon.svg');
+}
+
+.skills-flex-box .cpp::before {
+    background-image: url('images/skills-icons/c-plus-plus-programming-language-icon.svg');
+}
+
+.skills-flex-box .python::before {
+    background-image: url('images/skills-icons/python-programming-language-icon.svg');
+}
+
+.skills-flex-box .html::before {
+    background-image: url('images/skills-icons/html-icon.svg');
+}
+
+.skills-flex-box .css::before {
+    background-image: url('images/skills-icons/css-icon.svg');
+}
+
+.skills-flex-box .git::before {
+    background-image: url('images/skills-icons/git-icon.svg');
+}
+
+.skills-flex-box .dsa::before {
+    background-image: url('images/skills-icons/dsa.png');
 }
