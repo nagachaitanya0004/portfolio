@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viyyapu Naga Chaitanya</title>
+        <meta name="description" content="Viyyapu Naga Chaitanya - Software Developer, AI/ML Enthusiast, DSA Problem Solver. B.Tech student passionate about coding and building efficient software.">
+        <meta name="theme-color" content="#ffffff">
+        <title>Home - Viyyapu Naga Chaitanya</title>
         <link rel="stylesheet" href="styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,16 +16,36 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <div class="theme-scoped">
+        <nav aria-label="Main site navigation">
+            <div class="nav-inner">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <span class="theme-toggle-icon theme-toggle-icon--sun" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="12" r="4.25"></circle>
+                            <path d="M12 2.5v2.5M12 19v2.5M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2.5 12H5M19 12h2.5M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path>
+                        </svg>
+                    </span>
+                    <span class="theme-toggle-thumb" aria-hidden="true"></span>
+                    <span class="theme-toggle-icon theme-toggle-icon--moon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M14.8 3.7c-0.65 0-1.28 0.08-1.89 0.24a8.48 8.48 0 0 1 7.15 8.37c0 2.1-0.76 4.03-2.02 5.52a8.5 8.5 0 1 1-3.24-14.13Z"></path>
+                        </svg>
+                    </span>
+                    <span class="sr-only">Toggle dark mode</span>
+                </label>
+            </div>
         </nav>
 
+        <main>
         <div class="hero">
             <h1>Hi, I'm<br>Viyyapu Naga Chaitanya</h1>
             <h2>Aspiring Software Developer<br>AI &amp; ML Enthusiast | DSA Problem Solver</h2>
@@ -94,6 +116,8 @@
                     <p class="skill-name">DSA</p>
                 </li>
             </ul>
+        </div>
+        </main>
         </div>
 
         <footer>

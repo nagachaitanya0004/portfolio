@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viyyapu Naga Chaitanya</title>
+        <meta name="description" content="About Viyyapu Naga Chaitanya - B.Tech student passionate about software development and problem solving.">
+        <title>About - Viyyapu Naga Chaitanya</title>
         <link rel="stylesheet" href="styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,26 +13,48 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <div class="theme-scoped">
+        <nav aria-label="Main site navigation">
+            <div class="nav-inner">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <span class="theme-toggle-icon theme-toggle-icon--sun" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="12" r="4.25"></circle>
+                            <path d="M12 2.5v2.5M12 19v2.5M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2.5 12H5M19 12h2.5M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"></path>
+                        </svg>
+                    </span>
+                    <span class="theme-toggle-thumb" aria-hidden="true"></span>
+                    <span class="theme-toggle-icon theme-toggle-icon--moon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M14.8 3.7c-0.65 0-1.28 0.08-1.89 0.24a8.48 8.48 0 0 1 7.15 8.37c0 2.1-0.76 4.03-2.02 5.52a8.5 8.5 0 1 1-3.24-14.13Z"></path>
+                        </svg>
+                    </span>
+                    <span class="sr-only">Toggle dark mode</span>
+                </label>
+            </div>
         </nav>
 
-        <section class="about">
-            <h1>About Me</h1>
-            <p>
-                I am a Computer Science student with a strong interest in Software Development and Problem Solving.
-                I enjoy understanding how systems work and writing efficient code to solve complex problems.
-                I have spent significant time strengthening my knowledge of Data Structures and Algorithms by practicing on competitive programming platforms.
-                Alongside problem solving, I am currently learning web development to build real-world applications and improve my understanding of software systems.
-                My goal is to become a skilled Software Development Engineer and contribute to building scalable and impactful technology.
-            </p>
-        </section>
+        <main>
+            <section class="about">
+                <h1>About Me</h1>
+                <p>
+                    I am a Computer Science student with a strong interest in Software Development and Problem Solving.
+                    I enjoy understanding how systems work and writing efficient code to solve complex problems.
+                    I have spent significant time strengthening my knowledge of Data Structures and Algorithms by practicing on competitive programming platforms.
+                    Alongside problem solving, I am currently learning web development to build real-world applications and improve my understanding of software systems.
+                    My goal is to become a skilled Software Development Engineer and contribute to building scalable and impactful technology.
+                </p>
+            </section>
+        </main>
+        </div>
 
         <footer>
             <p>&copy; 2026 Viyyapu Naga Chaitanya. All rights reserved.</p>
